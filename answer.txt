@@ -1,0 +1,9 @@
+1. Plot the program execution time / filesize: When transferring the data with different file sizes here is the raw data that i received:
+- 5MB - 1.282 Seconds
+- 10MB - 2.857 seconds
+- 50MB - 10.009 seconds
+- 100MB - 18.527 seconds
+- 1000MB - 2.296e-05 seconds
+With this data we can see that the time it takes to copy over is pretty linear up util we get to 100 MB, and then starts to speed up a little faster. And then we you get to the 1K MB, It gets significantly faster. 
+
+2. Why there is this trend: Because the bigger the file, the more operating system optimizes its operation. We can especially see this when it reaches a GB, and It is even faster than 100 MB. This is because despite it being larger, the computer gives more resources to compute the answer.
